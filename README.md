@@ -7,7 +7,7 @@ In this repository, you will find examples of popular design patterns such as Si
 <h3> Singleton Pattern </h3>
 <p> Level of difficult: &#9733; &#x2606; &#x2606; &#x2606; &#x2606;</p>
 <p> Popular: &#9733; &#9733; &#9733; &#9733; &#x2606;</p>
-<p> Singleton Pattern allows creating only one object (object) of a class (class) in the entire application. The idea of the Singleton Pattern is to ensure that a class has only a single object and to provide a global point of access to this object. Usually used in situations where you want to ensure that only a single object will be created in the system, for example database access, resource objects, or system settings. </p>
+<p class="red"> Singleton Pattern allows creating only one object (object) of a class (class) in the entire application. The idea of the Singleton Pattern is to ensure that a class has only a single object and to provide a global point of access to this object. Usually used in situations where you want to ensure that only a single object will be created in the system, for example database access, resource objects, or system settings. </p>
 <div>
     <img class="illustration" src="images/singleton_design_pattern.png" alt="singleton-pattern-image" />
 </div>
