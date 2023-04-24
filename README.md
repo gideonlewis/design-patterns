@@ -1,6 +1,7 @@
 # design-pattern
 In this repository, you will find examples of popular design patterns such as Singleton, Factory, Strategy, Decorator, Observer, and many more. Each example comes with a detailed description of how to apply that design pattern in Golang, along with reference materials so that you can better understand them.
 
+
 <h2>&#9733; Creational Patterns (6) &#9733;</h2>
 <h3> Singleton Pattern </h3>
 <p> Level of difficult: &#9733; &#x2606; &#x2606; &#x2606; &#x2606;</p>
@@ -107,3 +108,4 @@ In this repository, you will find examples of popular design patterns such as Si
 <h3> Visitor Pattern </h3>
 <p> Level of difficult: &#9733; &#9733; &#9733; &#9733; &#x2606;</p>
 <p> Popular: &#9733; &#x2606; &#x2606; &#x2606; &#x2606;</p>
+
