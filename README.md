@@ -6,10 +6,52 @@ In this repository, you will find examples of popular design patterns such as Si
 <h3> Singleton Pattern </h3>
 <p> Level of difficult: &#9733; &#x2606; &#x2606; &#x2606; &#x2606;</p>
 <p> Popular: &#9733; &#9733; &#9733; &#9733; &#x2606;</p>
-<p> Singleton Pattern allows creating only one object (object) of a class (class) in the entire application. The idea of the Singleton Pattern is to ensure that a class has only a single object and to provide a global point of access to this object. Usually used in situations where you want to ensure that only a single object will be created in the system, for example database access, resource objects, or system settings. </p>
+<p> Singleton Pattern cho phép tạo duy nhất một đối tượng (object) của một lớp (class) trong toàn bộ ứng dụng. Ý tưởng của Mẫu Singleton là đảm bảo rằng một lớp chỉ có một đối tượng duy nhất và cung cấp một điểm truy cập toàn cục cho đối tượng này. Thường được sử dụng trong các tình huống mà bạn muốn đảm bảo rằng chỉ một đối tượng duy nhất sẽ được tạo trong hệ thống, ví dụ: quyền truy cập cơ sở dữ liệu, đối tượng tài nguyên hoặc cài đặt hệ thống. </p>
 <div align="center">
     <img src="images/singleton_design_pattern.png" style="width: 50%; height: auto;" alt="singleton-pattern-image" />
 </div>
+
+```go
+package singleton
+
+import (
+	"sync"
+)
+
+type Singleton struct {
+	// Your singleton struct fields here
+}
+
+var instance *Singleton
+var once sync.Once
+
+func GetInstance() *Singleton {
+	once.Do(func() {
+		instance = &Singleton{
+			// Initialize your singleton struct fields here
+		}
+	})
+	return instance
+}
+
+```
+
+
+```go
+package main
+
+import (
+	"fmt"
+	"yourpackage/singleton"
+)
+
+func main() {
+	instance := singleton.GetInstance()
+	// Use the singleton instance as needed
+	fmt.Println(instance)
+}
+```
+
 
 <h3> Simple Factory Pattern </h3>
 <p> Level of difficult: &#9733; &#9733; &#x2606; &#x2606; &#x2606;</p>
